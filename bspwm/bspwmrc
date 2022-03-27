@@ -1,11 +1,11 @@
 #! /bin/sh
-feh --bg-scale ~/Wallpapers/voyager-1-dark-was-the-night-2560×1600.jpg &
+nitrogen --restore &
 picom -f &
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 
 bspc monitor -d 1 2 3 4 5 6 7 8 9 10
-bash ~/.config/polybar/launch.sh --blocks &
+bash ~/.config/polybar/launch.sh --colorblocks &
 
 bspc config border_width         1
 bspc config window_gap           40
